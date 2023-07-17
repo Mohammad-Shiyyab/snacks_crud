@@ -1,0 +1,12 @@
+{% extends 'abse.html' %}
+{% block content %}
+<h1>Add Snacks</h1><br/>
+<form method="post"><table>
+    {% csrf_token %}
+
+    {{ form.as_table}}
+
+</table>
+<button type="submit">Submit</button>
+</form>
+{% endblock content %}
