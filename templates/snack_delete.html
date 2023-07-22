@@ -3,7 +3,7 @@
 <h1> Delete</h1>
 <form method="post">
     {% csrf_token%}
-    <h3> Are you sure you want to Delete this Kind of Snacks</h3>
+    <h2> Are you sure you want to Delete this Kind of Snacks</h2>
 
     <input type="submit" value="Yes">
     <a href="{% url 'snack_list' %}"> <input type="submit" value="No"></a>
